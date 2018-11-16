@@ -1,7 +1,15 @@
 ---
+layout: post
 title: ubuntu18.04+gt1066+cuda+cudnn+tensorflow+keras环境搭建
+date:   2018-11-15 00:00:00 +0800
+categories: document
+tag: 教程
 ---
-# ubuntu18.04+gt1066+cuda+cudnn+tensorflow+keras环境搭建
+
+* content
+{:toc}
+
+
 ## ubuntu18.04安装
 u盘安装，很简单  
 ## gt1066驱动安装
@@ -135,5 +143,3 @@ Test accuracy: 0.9923
 ```shell
 $ watch -n 3 nvidia-smi
 ```
-
-{{ page.date|date_to_string }}
