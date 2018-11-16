@@ -26,34 +26,8 @@ $ sudo ubuntu-drivers autoinstall
 $ sudo reboot
 ```
 重启生效  
-<<<<<<< HEAD
-```shell
-$ nvidia-smi 
-Mon Nov 12 22:13:51 2018       
-+-----------------------------------------------------------------------------+
-| NVIDIA-SMI 410.48                 Driver Version: 410.48                    |
-|-------------------------------+----------------------+----------------------+
-| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
-| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
-|===============================+======================+======================|
-|   0  GeForce GTX 106...  Off  | 00000000:01:00.0  On |                  N/A |
-| 37%   27C    P8    10W / 120W |    278MiB /  6076MiB |      0%      Default |
-+-------------------------------+----------------------+----------------------+
-                                                                               
-+-----------------------------------------------------------------------------+
-| Processes:                                                       GPU Memory |
-|  GPU       PID   Type   Process name                             Usage      |
-|=============================================================================|
-|    0       897      G   /usr/lib/xorg/Xorg                           139MiB |
-|    0      1044      G   /usr/bin/gnome-shell                          78MiB |
-|    0      6368      G   ...quest-channel-token=9525180073602140728    58MiB |
-+-----------------------------------------------------------------------------+
-```
-## 安装cuda10
-在官网下载cuda安装包，按网站上的说明安装即可，不用替换什么文件  
-![](ref/cuda1.png)  
-=======
-	```shell  
+
+	```shell
 	$ nvidia-smi 
 	Mon Nov 12 22:13:51 2018       
 	+-----------------------------------------------------------------------------+
@@ -78,7 +52,6 @@ Mon Nov 12 22:13:51 2018
 ## 安装cuda10
 在官网下载cuda安装包，按网站上的说明安装即可，不用替换什么文件  
 ![png]({{ site.baseurl }}/assets/img/cuda1.png)  
->>>>>>> gh-pages
 ```shell
 $ sudo dpkg -i cuda-repo-ubuntu1804-10-0-local-10.0.130-410.48_1.0-1_amd64.deb
 $ sudo apt-key add /var/cuda-repo-<version>/7fa2af80.pub
@@ -87,11 +60,7 @@ $ sudo apt-get install cuda
 ```
 ## 安装cudnn7.4.1
 在官网注册，下载cudnn安装包，dpkg安装即可  
-<<<<<<< HEAD
-![](ref/cudnn1.png)  
-=======
 ![png]({{ site.baseurl }}/assets/img/cudnn1.png)  
->>>>>>> gh-pages
 安装后添加环境变量  
 ```shell
 $ sudo dpkg -i libcudnn7_7.4.1.5-1+cuda10.0_amd64.deb
@@ -175,8 +144,3 @@ Test accuracy: 0.9923
 ```shell
 $ watch -n 3 nvidia-smi
 ```
-<<<<<<< HEAD
-
-{{ page.date|date_to_string }}
-=======
->>>>>>> gh-pages
