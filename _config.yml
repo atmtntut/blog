@@ -3,7 +3,7 @@ name: 落木知了 Blog
 email: shui514@qq.com
 author: atmtntut
 github: https://github.com/atmtntut/
-baseurl: ""
+baseurl: "/blog"
 
 #permalink: /:categories/:year/:month/:day/:title/
 permalink: /:year/:month/:day/:title/
