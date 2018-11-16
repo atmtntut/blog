@@ -1,3 +1,18 @@
-baseurl: /blog
+# Site settings
+name: 落木知了 Blog
+email: shui514@qq.com
+author: atmtntut
+github: https://github.com/atmtntut/
+baseurl: "/blog"
 
-theme: jekyll-theme-leap-day
+#permalink: /:categories/:year/:month/:day/:title/
+permalink: /:year/:month/:day/:title/
+plugins: [jekyll-paginate]
+paginate: 10
+
+exclude: ['README.md', 'Gemfile.lock', 'Gemfile', 'Rakefile']
+
+github_username: atmtntut
+
+# Build settings
+markdown: kramdown
